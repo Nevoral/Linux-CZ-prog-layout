@@ -5,7 +5,7 @@ xkb_symbols "cz-prog" {
     // 2023 by Tomas Nevoral <NevoralTomas@gmail.com>
 
     include "latin"
-    name[Group1]= "Czech (programing)";
+    name[Group1]= "Czech (prog)";
 
     key <TLDE>  {[dead_abovering,    asciitilde ] };
     key <AE01>  {[         equal,        exclam ] };
