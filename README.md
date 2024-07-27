@@ -2,6 +2,8 @@
 
 This guide will help you add a new keyboard layout to your Ubuntu system. The new layout is a full-size keyboard where the first layer is the Czech layout and the second layer is the English layout with some changes and compromises.
 
+![obrazek](https://github.com/user-attachments/assets/1d1bb237-2703-41c5-95cb-965946b63d6c)
+
 ## Step 1: Add `xkb_symbols` Layout
 
 1. Open a terminal.
