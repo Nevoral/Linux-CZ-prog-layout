@@ -7,7 +7,7 @@ xkb_symbols "cz-prog" {
     include "latin"
     name[Group1]= "Czech (prog)";
 
-    key <TLDE>  {[dead_abovering,    asciitilde ] };
+    key <TLDE>  {[  grave_accent,    asciitilde ] };
     key <AE01>  {[         equal,        exclam ] };
     key <AE02>  {[        ecaron,            at ] };
     key <AE03>  {[        scaron,    numbersign ] };
@@ -45,7 +45,7 @@ xkb_symbols "cz-prog" {
     key <AC09>  {[             l,             L ] };
     key <AC10>  {[     semicolon,         colon ] };
     key <AC11>  {[    apostrophe,      quotedbl ] };
-    key <BKSL>  {[       section,         uring ] };
+    key <BKSL>  {[dead_abovering,         uring ] };
 
     key <LSGT>  {[     backslash,           bar ] };
     key <AB01>  {[             y,             Y ] };
