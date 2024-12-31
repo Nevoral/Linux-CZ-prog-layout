@@ -85,7 +85,7 @@ This guide will help you add a new keyboard layout to your Ubuntu system. The ne
 
 4. Save and close the file.
 
-## Step 2: Update `evdev.lst`
+## Step 2: Update `evdev.lst` (Optional: older systems compatibility)
 
 1. In the terminal, edit the `evdev.lst` file located in the `/usr/share/X11/xkb/rules/` directory:
 
