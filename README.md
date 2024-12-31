@@ -122,12 +122,45 @@ This guide will help you add a new keyboard layout to your Ubuntu system. The ne
 
 3. Save and close the file.
 
-## Step 4: Reboot Your System
+## Step 4. Enable Your Custom Layout:
 
-For the changes to take effect, you need to restart your computer. You can do this from the terminal by typing:
-
+### A. Temporary Use
+You can test the layout immediately without making it permanent:
 ```bash
-sudo reboot
+setxkbmap my_custom_layout
 ```
 
-After the system reboots, the new keyboard layout should be available in your keyboard settings.
+### B. Permanent Use
+1. Open the system-wide keyboard configuration file:
+   ```bash
+   sudo nano /etc/default/keyboard
+   ```
+
+2. Update the `XKBLAYOUT` variable to include your custom layout:
+   ```plaintext
+   XKBLAYOUT="my_custom_layout"
+   ```
+
+3. Save and apply the changes:
+   ```bash
+   sudo dpkg-reconfigure keyboard-configuration
+   ```
+
+## Step 5: Save and Apply the changes:
+
+For the changes to take effect, you need to refresh your keyboard configuration. You can do this from the terminal by typing:
+
+```bash
+sudo dpkg-reconfigure keyboard-configuration
+```
+
+## Step 6. Test and Debug Your Keyboard:
+
+1. To verify the layout is working, you can type some characters in a terminal or text editor and confirm their behavior.
+
+2. If something doesn't work, check the logs:
+   ```bash
+   cat /var/log/Xorg.0.log | grep "xkb"
+   ```
+
+3. If errors occur, double-check the syntax in your custom layout file.
